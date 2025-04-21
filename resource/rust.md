@@ -99,6 +99,12 @@
 
 ## Blogs
 
+- [infinitecircuits](https://www.infinitecircuits.dev/)
+- [ongardie](https://ongardie.net/misc/rust/)
+- [hoverbear](https://hoverbear.org/blog/)
+- [ferrous-systems](https://ferrous-systems.com/blog/mindsets-and-expectations/)
+- [alexpusch](https://github.com/alexpusch/rust-magic-patterns/tree/master)
+- [artificialworlds](https://artificialworlds.net/blog/)
 - [rust-dd](https://rust-dd.com/)
 - [CuriousCoding](https://curiouscoding.nl/posts/)
 - [jdrouet](https://jdrouet.github.io/tags/search-engine/)
@@ -112,6 +118,7 @@
 - [Brenden Matthews](https://brndn.io/)
 - [raviqqe](https://raviqqe.com/doc/)
 - [dezoito](https://dezoito.github.io/)
+- [borretti](https://borretti.me/article/)
 - [jamesmcm](https://jamesmcm.github.io/blog/)
 - [boehs](https://boehs.org/in/blog)
 - [xd009642](https://xd009642.github.io/)

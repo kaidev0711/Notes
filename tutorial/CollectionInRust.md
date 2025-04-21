@@ -1209,3 +1209,164 @@ duy trì thứ tự các phần tử.
 Dưới đây là một bài báo cáo hoàn chỉnh về **BTreeMap** trong Rust, được tổ chức
 theo cấu trúc rõ ràng và chi tiết. Bạn có thể sử dụng nó để thuyết trình hoặc
 viết tài liệu.
+
+# Sơ đồ tư duy học Rust theo "The Rust Book"
+
+## 1. Bắt đầu (Getting Started)
+
+    * Cài đặt Rust (Installation)
+        * rustup (trình quản lý phiên bản)
+        * cargo (trình quản lý gói & build)
+        * rustc (trình biên dịch)
+    * Chương trình "Hello, world!"
+    * Cargo cơ bản
+        * `cargo new`
+        * `cargo build`
+        * `cargo run`
+        * `cargo check`
+
+## 2. Các khái niệm lập trình phổ biến (Common Programming Concepts)
+
+    * Biến và Tính bất biến (Variables and Mutability)
+        * `let`, `mut`
+        * Hằng số (`const`)
+        * Che dấu (Shadowing)
+    * Kiểu dữ liệu (Data Types)
+        * Vô hướng (Scalar): Integer, Floating-Point, Boolean, Character
+        * Hợp thành (Compound): Tuple, Array
+    * Hàm (Functions)
+        * Định nghĩa và gọi hàm
+        * Tham số và đối số
+        * Câu lệnh và biểu thức (Statements vs Expressions)
+        * Giá trị trả về
+    * Chú thích (Comments)
+    * Luồng điều khiển (Control Flow)
+        * `if`, `else if`, `else`
+        * Vòng lặp: `loop`, `while`, `for`
+
+## 3. Sở hữu (Ownership)
+
+    * Khái niệm cốt lõi:
+        * Ownership (Sở hữu)
+        * Borrowing (Vay mượn) - Tham chiếu (`&`, `&mut`)
+        * Lifetimes (Vòng đời) - (Giới thiệu sơ lược)
+    * Quy tắc sở hữu
+    * Tham chiếu và Vay mượn
+        * Tham chiếu bất biến (`&T`)
+        * Tham chiếu khả biến (`&mut T`) - Chỉ một tham chiếu khả biến tại một thời điểm
+        * Dangling References (Tham chiếu lơ lửng - Rust ngăn chặn điều này)
+    * Lát cắt (Slices)
+        * String Slices (`&str`)
+        * Các loại lát cắt khác
+
+## 4. Cấu trúc (Structs)
+
+    * Định nghĩa và khởi tạo Structs
+    * Tuple Structs
+    * Unit-Like Structs
+    * Sở hữu dữ liệu Struct
+    * Ví dụ về Structs
+    * Phương thức (Methods)
+        * Định nghĩa phương thức (`impl`)
+        * `&self`, `&mut self`, `self`
+        * Hàm liên kết (Associated Functions - ví dụ: hàm khởi tạo `new`)
+
+## 5. Liệt kê (Enums) và Đối sánh mẫu (Pattern Matching)
+
+    * Định nghĩa Enums
+    * Gắn dữ liệu vào biến thể Enum
+    * Enum `Option<T>` (Some, None)
+    * `match` Control Flow Operator
+        * Các nhánh (arms)
+        * Bắt buộc phải xử lý hết các trường hợp (Exhaustive)
+        * Patterns (Mẫu) để bind giá trị
+    * `if let` (Cú pháp ngắn gọn cho `match` một trường hợp)
+
+## 6. Quản lý dự án (Packages, Crates, Modules)
+
+    * Packages và Crates
+        * Crate gốc (root), thư viện (library), thực thi (binary)
+        * `Cargo.toml` (Manifest file)
+    * Modules (Hệ thống module để kiểm soát phạm vi và tính riêng tư)
+        * Định nghĩa Modules (`mod`)
+        * Đường dẫn (Paths) để tham chiếu đến mục trong module tree
+        * Từ khóa `use` để đưa đường dẫn vào phạm vi
+        * Từ khóa `pub` (public) để tạo giao diện công khai
+        * Phân tách module vào các file khác nhau
+
+## 7. Các bộ sưu tập phổ biến (Common Collections)
+
+    * Vectors (`Vec<T>`) - Lưu trữ danh sách giá trị
+    * Strings (`String`) - Văn bản UTF-8
+        * Tạo, cập nhật, đọc String
+        * Lập chỉ mục (Indexing) - Thận trọng với UTF-8
+        * Duyệt qua String (chars, bytes)
+    * Hash Maps (`HashMap<K, V>`) - Lưu trữ cặp key-value
+        * Tạo, truy cập, cập nhật
+        * Sở hữu và Hash Maps
+
+## 8. Xử lý lỗi (Error Handling)
+
+    * `panic!` Macro - Lỗi không thể phục hồi
+    * `Result<T, E>` Enum - Lỗi có thể phục hồi
+        * `Ok(T)`, `Err(E)`
+        * `match` với `Result`
+        * Các phương thức tiện ích: `unwrap()`, `expect()`, `?` operator
+
+## 9. Kiểu Generic, Traits, Lifetimes (Generics, Traits, Lifetimes)
+
+    * Kiểu Generic (Generic Types) - Giảm trùng lặp code
+        * Trong định nghĩa hàm, struct, enum, method
+    * Traits - Định nghĩa hành vi chung (Tương tự Interfaces)
+        * Định nghĩa Trait (`trait`)
+        * Implement Trait cho một kiểu (`impl Trait for Type`)
+        * Default Implementation
+        * Trait Bounds (Ràng buộc Trait) trên kiểu Generic
+        * Sử dụng Trait Bounds để thực thi có điều kiện
+        * Return Types `impl Trait`
+    * Lifetimes (Vòng đời) - Đảm bảo tham chiếu luôn hợp lệ
+        * Chú thích Lifetime (Lifetime Annotations) trong chữ ký hàm
+        * Suy luận Lifetime (Lifetime Elision Rules)
+        * Lifetime trong định nghĩa Struct
+        * `'static` Lifetime
+
+## 10. Kiểm thử (Testing)
+
+    * Viết Tests
+        * Hàm test (`#[test]`)
+        * `assert!`, `assert_eq!`, `assert_ne!` macros
+        * Kiểm tra `panic!` với `#[should_panic]`
+        * Sử dụng `Result<T, E>` trong tests
+    * Chạy Tests (`cargo test`)
+    * Tổ chức Tests
+        * Unit Tests (trong `src` cùng với code)
+        * Integration Tests (trong thư mục `tests`)
+
+## 11. Dự án I/O: Xây dựng chương trình Command Line
+
+    * Đọc đối số dòng lệnh
+    * Đọc file
+    * Refactoring để cải thiện tính module và xử lý lỗi
+    * Viết test cho thư viện
+    * Làm việc với biến môi trường
+    * Ghi vào `stderr` thay vì `stdout`
+
+## 12. Các tính năng nâng cao hơn (Further Topics)
+
+    * More about Cargo and Crates.io
+    * Smart Pointers (Box, Rc, RefCell)
+    * Fearless Concurrency (Threads, Message Passing, Shared State)
+    * Object-Oriented Programming Features of Rust (Trait Objects)
+    * Patterns and Matching (Advanced)
+    * Unsafe Rust
+    * Advanced Lifetimes, Traits, Types, Functions/Closures
+
+## 13. Dự án cuối cùng (Final Project - thường là xây dựng web server nhỏ)
+
+## 14. Phụ lục (Appendices)
+
+    * Keywords
+    * Operators and Symbols
+    * Derivable Traits
+    * Useful Development Tools
+    * Editions
