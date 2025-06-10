@@ -3,6 +3,7 @@
 ## Rust Books
 
 - [implrust](https://implrust.com/)
+- [lborb](https://lborb.github.io/book/)
 - [Rust Cookbook](https://rust-lang-nursery.github.io/rust-cookbook/intro.html)
 - [Comprehensive Rust 🦀](https://google.github.io/comprehensive-rust/)
 - [Rust Design Patterns](https://rust-unofficial.github.io/patterns/)
@@ -81,6 +82,10 @@
 
 ## Others
 
+- [mattrighetti](https://mattrighetti.com/)
+- [mmhaskell](https://mmhaskell.com/)
+- [zksecurity](https://reports.zksecurity.xyz/)
+- [deadmoney](https://deadmoney.gg/)
 - [Rust for Linux](https://rust-for-linux.com/coccinelle-for-rust)
 - [cel](https://cel.cs.brown.edu/)
 - [Yuki Nakamura's Blog](https://yuki-nakamura.com/)
@@ -99,6 +104,12 @@
 
 ## Blogs
 
+- [pierrezemb](https://pierrezemb.fr/posts/)
+- [minikin](https://minikin.me/)
+- [willemvanhulle](https://willemvanhulle.tech/blog/)
+- [fasterthanli](https://fasterthanli.me/articles/)
+- [swatinem](https://swatinem.de/blog/)
+- [natkr](https://natkr.com/)
 - [infinitecircuits](https://www.infinitecircuits.dev/)
 - [ongardie](https://ongardie.net/misc/rust/)
 - [hoverbear](https://hoverbear.org/blog/)
@@ -112,7 +123,6 @@
 - [genxjourney](https://www.genxjourney.online/blog)
 - [dystroy](https://dystroy.org/blog/)
 - [smallcultfollowing](https://smallcultfollowing.com/babysteps/blog/)
-- [fastertanli.me](https://fasterthanli.me/)
 - [Chesedo](https://chesedo.me/blog/)
 - [walnut356](https://walnut356.github.io/archive/)
 - [Brenden Matthews](https://brndn.io/)
